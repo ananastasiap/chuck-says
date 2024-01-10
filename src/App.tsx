@@ -1,7 +1,12 @@
-import "./App.css"
+import { Fragment } from "react"
+import MainScreen from "./components/main-screen"
 
-function App() {
-  return <div className="App">APP</div>
+const App: React.FC = () => {
+  return (
+    <Fragment>
+      <MainScreen />
+    </Fragment>
+  )
 }
 
 export default App
