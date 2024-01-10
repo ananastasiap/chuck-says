@@ -1,8 +1,9 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
+import mainScreenReducer from "../components/main-screen/store/slices"
 
 export const store = configureStore({
   reducer: {
-    //
+    mainScreen: mainScreenReducer,
   },
 })
 
