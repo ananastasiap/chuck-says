@@ -1,4 +1,4 @@
-import { useAppSelector } from "../../../../../app/hooks"
+import { useAppSelector } from "../../../../app/hooks"
 
 const Joke = () => {
   const state = useAppSelector((state) => state.mainScreen)
