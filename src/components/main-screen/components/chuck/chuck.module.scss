@@ -1,0 +1,67 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 21.87em;
+  height: 25em;
+  border: 1px solid white;
+}
+
+.center {
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.chuck {
+  position: absolute;
+  top: 9.37em;
+  height: 7.5em;
+  width: 9.37em;
+  background-color: #f4b595;
+  border-radius: 0 0 1em 1em;
+}
+
+.ear {
+  position: absolute;
+  top: 12.18em;
+  height: 1.87em;
+  width: 11.87em;
+  background-color: #f4b595;
+  border-radius: 1em;
+}
+
+.ear:before {
+  position: absolute;
+  top: 0.34em;
+  left: 0;
+  right: 0;
+  content: "";
+  margin: auto;
+  height: 1.25em;
+  width: 10.93em;
+  background-color: #ec7177;
+  border-radius: 1em;
+}
+
+.hair:before,
+.hair:after {
+  position: absolute;
+  top: 0.04em;
+  content: "";
+  height: 1.56em;
+  width: 9.56em;
+  background-color: #9d5c1a;
+}
+
+.eye {
+  position: absolute;
+  top: 1.8em;
+  left: 2.3em;
+  height: 1.2em;
+  width: 2.2em;
+  background-color: #000;
+  border-radius: 50%;
+  box-shadow: 3em 0 #000;
+}
