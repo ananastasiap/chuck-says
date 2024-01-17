@@ -26,10 +26,14 @@ const Chuck: React.FC = () => {
         <div className={cn(styles.chuck, styles.center)}>
           <div className={styles.hat}></div>
           <div className={styles.belt}></div>
+          <div className={styles.mouth}></div>
           <div className={cn(styles.hair, styles.center)}>
             <div className={styles.eye}></div>
             <div className={styles.shadowUnderEyes}></div>
             <div className={styles.beard}></div>
+          </div>
+          <div className={cn(styles.jacket, styles.center)}>
+            <div className={styles.jacketBottom}></div>
           </div>
         </div>
       </div>
