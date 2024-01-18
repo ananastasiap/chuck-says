@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit"
+import { IMainScreenState } from "./types"
 
-export const initialState = {
+export const initialState: IMainScreenState = {
   currentJoke: "",
+  displayJoke: false,
 }
 
 export const mainScreenSlice = createSlice({
@@ -11,9 +13,16 @@ export const mainScreenSlice = createSlice({
     setCurrentJoke: (state, action) => {
       state.currentJoke = action.payload
     },
+    showBlockWithJoke: (state) => {
+      state.displayJoke = true
+    },
+    hideBlockWithJoke: (state) => {
+      state.displayJoke = false
+    },
   },
 })
 
-export const { setCurrentJoke } = mainScreenSlice.actions
+export const { setCurrentJoke, showBlockWithJoke, hideBlockWithJoke } =
+  mainScreenSlice.actions
 
 export default mainScreenSlice.reducer

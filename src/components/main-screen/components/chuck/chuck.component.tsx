@@ -1,7 +1,11 @@
+import cn from "classnames"
+
 import axios from "axios"
 import { useAppDispatch } from "../../../../app/hooks"
 import { setCurrentJoke } from "../../store/slices"
 import { CHUCK_RANDOM_JOKES_API } from "../../constants"
+
+import styles from "./chuck.module.scss"
 
 const Chuck: React.FC = () => {
   const dispatch = useAppDispatch()
@@ -17,10 +21,22 @@ const Chuck: React.FC = () => {
 
   return (
     <div>
-      <div onClick={fetchChuckJoke}>CHUCK HEAD + BODY</div>
-      <div onClick={fetchChuckJoke}>CHUCK left part</div>
-      <div onClick={fetchChuckJoke}>CHUCK right part</div>
-      <div onClick={fetchChuckJoke}>CHUCK legs</div>
+      <div onClick={fetchChuckJoke} className={styles.container}>
+        <div className={cn(styles.ear, styles.center)}></div>
+        <div className={cn(styles.chuck, styles.center)}>
+          <div className={styles.hat}></div>
+          <div className={styles.belt}></div>
+          <div className={styles.mouth}></div>
+          <div className={cn(styles.hair, styles.center)}>
+            <div className={styles.eye}></div>
+            <div className={styles.shadowUnderEyes}></div>
+            <div className={styles.beard}></div>
+          </div>
+          <div className={cn(styles.jacket, styles.center)}>
+            <div className={styles.jacketBottom}></div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
