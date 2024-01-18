@@ -1,8 +1,12 @@
+import styles from "./welcomeText.module.scss"
+
 const WelcomeText: React.FC = () => {
   return (
-    <div>
-      <h1>Click on Chuck</h1>
-      <p>Warning: jokes can be bad and strange. Sorry!</p>
+    <div className={styles.container}>
+      <h1 className={styles.welcomeText}>Click on Chuck</h1>
+      <p className={styles.text}>
+        Warning: jokes can be bad and strange. Sorry!
+      </p>
     </div>
   )
 }
