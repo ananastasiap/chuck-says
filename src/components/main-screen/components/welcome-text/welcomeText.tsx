@@ -1,3 +1,4 @@
+// import cn from "classnames"
 import styles from "./welcomeText.module.scss"
 
 const WelcomeText: React.FC = () => {
@@ -5,7 +6,7 @@ const WelcomeText: React.FC = () => {
     <div className={styles.container}>
       <h1 className={styles.welcomeText}>Click on Chuck</h1>
       <p className={styles.text}>
-        Warning: jokes can be bad and strange. Sorry!
+        <span>Warning</span>: jokes can be bad and strange. Sorry!
       </p>
     </div>
   )
