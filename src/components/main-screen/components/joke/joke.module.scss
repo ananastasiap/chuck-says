@@ -1,24 +1,29 @@
 .container {
-  background-color: #887373;
+  background-color: #e0f0e5;
   position: absolute;
   top: 9em;
-  left: 6em;
+  left: 4em;
   width: 32em;
-  padding: 2em 2em 4em 2em;
+  padding: 2em;
   height: 11em;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0% 75%
-  );
+  border-radius: 20%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 11em;
+    left: 32em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #e0f0e5;
+  }
 }
 
 .joke {
+  // display: inline-block;
   font-size: 16px;
   font-weight: normal;
   text-align: center;
+  // margin: 0 auto;
 }
