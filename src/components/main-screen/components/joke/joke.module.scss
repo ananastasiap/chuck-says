@@ -1,4 +1,7 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e0f0e5;
   position: absolute;
   top: 9em;
@@ -21,9 +24,7 @@
 }
 
 .joke {
-  // display: inline-block;
   font-size: 16px;
   font-weight: normal;
   text-align: center;
-  // margin: 0 auto;
 }
