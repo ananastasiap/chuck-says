@@ -1,20 +1,26 @@
 .container {
-  background-color: white;
   position: absolute;
   top: 9em;
-  left: 6em;
+  left: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f0e5;
   width: 32em;
-  padding: 2em 2em 4em 2em;
+  padding: 2em;
   height: 11em;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0% 75%
-  );
+  border-radius: 20%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 11em;
+    left: 32em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #e0f0e5;
+  }
 }
 
 .joke {

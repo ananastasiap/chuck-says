@@ -15,7 +15,7 @@ const MainScreen: React.FC = () => {
 
       const timeOfShowing = setTimeout(() => {
         dispatch(hideBlockWithJoke())
-      }, 10000)
+      }, 100000)
 
       return () => clearTimeout(timeOfShowing)
     }

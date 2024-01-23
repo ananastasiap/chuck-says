@@ -155,8 +155,8 @@
   background-image: linear-gradient(
     to right,
     #000 33%,
-    #fff 33%,
-    #fff 66%,
+    #e0f0e5 33%,
+    #e0f0e5 66%,
     #000 66%
   );
   top: 8.75em;
@@ -188,10 +188,13 @@
 .jacketBottom {
   width: 80%;
   height: 1.25em;
-  background-color: #fff;
+  background-color: #e0f0e5;
   position: absolute;
   left: 10%;
   bottom: -1.25em;
+  -webkit-box-shadow: 0px 7px 8px -3px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 7px 8px -3px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 7px 8px -3px rgba(0, 0, 0, 0.52);
 }
 
 .jacketBottom::before {
