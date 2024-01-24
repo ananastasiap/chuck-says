@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import Chuck from "./components/chuck"
 import Joke from "./components/joke"
 import WelcomeText from "./components/welcome-text"
+import DarkLight from "./components/dark-white"
 import { hideBlockWithJoke, showBlockWithJoke } from "./store/slices"
 
 const MainScreen: React.FC = () => {
@@ -22,11 +23,11 @@ const MainScreen: React.FC = () => {
   }, [state.currentJoke, dispatch])
 
   return (
-    <div>
+    <DarkLight>
       {state.displayJoke && <Joke />}
       <Chuck />
       <WelcomeText />
-    </div>
+    </DarkLight>
   )
 }
 

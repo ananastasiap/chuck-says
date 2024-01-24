@@ -4,6 +4,7 @@ import { IMainScreenState } from "./types"
 export const initialState: IMainScreenState = {
   currentJoke: "",
   displayJoke: false,
+  darkTheme: false,
 }
 
 export const mainScreenSlice = createSlice({
@@ -19,10 +20,17 @@ export const mainScreenSlice = createSlice({
     hideBlockWithJoke: (state) => {
       state.displayJoke = false
     },
+    toggleDarkTheme: (state) => {
+      state.darkTheme = !state.darkTheme
+    },
   },
 })
 
-export const { setCurrentJoke, showBlockWithJoke, hideBlockWithJoke } =
-  mainScreenSlice.actions
+export const {
+  setCurrentJoke,
+  showBlockWithJoke,
+  hideBlockWithJoke,
+  toggleDarkTheme,
+} = mainScreenSlice.actions
 
 export default mainScreenSlice.reducer
