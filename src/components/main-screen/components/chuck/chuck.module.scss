@@ -18,7 +18,7 @@
   top: 9.37em;
   height: 7.5em;
   width: 9.37em;
-  background-color: #f4b595;
+  background-color: var(--skin-color);
   border-radius: 0 0 1em 1em;
 }
 
@@ -27,7 +27,7 @@
   top: 12.18em;
   height: 1.87em;
   width: 11.87em;
-  background-color: #f4b595;
+  background-color: var(--skin-color);
   border-radius: 1em;
 }
 
@@ -40,7 +40,7 @@
   margin: auto;
   height: 1.25em;
   width: 10.93em;
-  background-color: #ec7177;
+  background-color: var(--ear-color);
   border-radius: 1em;
 }
 
@@ -93,7 +93,7 @@
   left: -2.81em;
   height: 1.7em;
   width: 15em;
-  background-color: #b35230;
+  background-color: var(--hat-color);
 }
 
 .hat::before {
@@ -102,9 +102,9 @@
   content: "";
   height: 3.12em;
   width: 1.56em;
-  background-color: #b35230;
+  background-color: var(--hat-color);
   border-radius: 0.93em 0.93em 0 0;
-  box-shadow: 13.43em 0 #b35230;
+  box-shadow: 13.43em 0 var(--hat-color);
 }
 
 .hat::after {
@@ -114,9 +114,9 @@
   content: "";
   height: 6.87em;
   width: 4.37em;
-  background-color: #b35230;
+  background-color: var(--hat-color);
   border-radius: 2.5em 2.5em 0 0;
-  box-shadow: 4.31em 0 #b35230;
+  box-shadow: 4.31em 0 var(--hat-color);
 }
 
 .belt {
@@ -134,7 +134,7 @@
   content: "";
   height: 1.87em;
   width: 2.5em;
-  border: 0.4em solid #eaa419;
+  border: 0.4em solid var(--hat-patch);
 }
 
 .mouth {
@@ -154,13 +154,7 @@
   top: 8.75em;
   height: 5.62em;
   width: 6.25em;
-  background-image: linear-gradient(
-    to right,
-    #000 33%,
-    #e0f0e5 33%,
-    #e0f0e5 66%,
-    #000 66%
-  );
+  background-image: var(--jacket-color);
 }
 
 .jacket::before {
@@ -169,7 +163,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-top: 1.87em solid #df2535;
+  border-top: 1.87em solid var(--jacket-tie);
   border-left: 1.87em solid transparent;
   border-right: 1.87em solid transparent;
 }
@@ -183,7 +177,7 @@
   margin: auto;
   height: 0.9em;
   width: 3.85em;
-  background-color: #f4b595;
+  background-color: var(--skin-color);
 }
 
 .jacketBottom {
@@ -192,7 +186,7 @@
   bottom: -1.25em;
   width: 80%;
   height: 1.25em;
-  background-color: #e0f0e5;
+  background-color: var(--jacket-bottom);
   box-shadow: 0px 7px 8px -3px rgba(0, 0, 0, 0.52);
 }
 

@@ -1,3 +1,19 @@
 :root {
   --back-color: #ffffffe7;
+  // body
+  --skin-color: #f4b595;
+  --ear-color: #ec7177;
+
+  // cloth
+  --jacket-color: linear-gradient(
+    to right,
+    #000 33%,
+    #e0f0e5 33%,
+    #e0f0e5 66%,
+    #000 66%
+  );
+  --jacket-bottom: #e0f0e5;
+  --jacket-tie: #df2535;
+  --hat-color: #b35230;
+  --hat-patch: #eaa419;
 }
