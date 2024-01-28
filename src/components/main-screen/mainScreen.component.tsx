@@ -4,6 +4,8 @@ import Chuck from "./components/chuck"
 import Joke from "./components/joke"
 import WelcomeText from "./components/welcome-text"
 import { hideBlockWithJoke, showBlockWithJoke } from "./store/slices"
+import DarkLight from "./components/dark-white"
+import Button from "./components/button"
 
 const MainScreen: React.FC = () => {
   const state = useAppSelector((state) => state.mainScreen)
@@ -22,11 +24,12 @@ const MainScreen: React.FC = () => {
   }, [state.currentJoke, dispatch])
 
   return (
-    <div>
+    <DarkLight>
       {state.displayJoke && <Joke />}
       <Chuck />
       <WelcomeText />
-    </div>
+      <Button />
+    </DarkLight>
   )
 }
 

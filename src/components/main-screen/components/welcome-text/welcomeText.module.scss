@@ -1,21 +1,20 @@
 .container {
   width: 15em;
   height: 8em;
-  border-radius: 0 0 25% 25%;
-  border: 0.1em solid black;
-  border-top: 0.1em solid var(--сolor-primary);
-
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   padding: 2em;
   margin-left: 5em;
-  cursor: pointer;
+
+  border-radius: 0 0 25% 25%;
+  border: 0.1em solid var(--primary-color);
+  border-top: 0.1em solid var(--back-color);
 
   transform: translateY(-74%);
   transition: transform 2s ease-out;
+  cursor: pointer;
 
   &:hover {
     transform: translate(0, 0);

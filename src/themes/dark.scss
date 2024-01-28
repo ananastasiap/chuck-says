@@ -1,0 +1,21 @@
+:root.dark-theme {
+  --back-color: #0b0e1ee7;
+  --primary-color: #fff;
+  // body
+  --skin-color: #b68870;
+  --ear-color: #c85c61;
+  // cloth
+  --jacket-color: linear-gradient(
+    to right,
+    #e8a92b 33%,
+    #b68870 33%,
+    #b68870 66%,
+    #e8a92b 66%
+  );
+  --jacket-bottom: #000;
+  --jacket-tie: #c01e2c;
+  --hat-color: #e8a92b;
+  --hat-patch: #c0c0c0;
+  // button
+  --hover-size: scale(1.2);
+}

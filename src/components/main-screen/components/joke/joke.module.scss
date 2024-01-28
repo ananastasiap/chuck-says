@@ -5,10 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e0f0e5;
-  width: 32em;
   padding: 2em;
+  width: 32em;
   height: 11em;
+  background-color: #e0f0e5;
   border-radius: 20%;
 
   &::before {
@@ -27,4 +27,5 @@
   font-size: 16px;
   font-weight: normal;
   text-align: center;
+  color: var(--joke-color);
 }
