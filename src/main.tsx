@@ -4,8 +4,6 @@ import { Provider } from "react-redux"
 import { store } from "./app/store"
 import App from "./App"
 import "./index.scss"
-import "./themes/light.scss"
-import "./themes/dark.scss"
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

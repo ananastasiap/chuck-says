@@ -1,15 +1,19 @@
+import { useEffect } from "react"
 import { useAppSelector } from "../../../../app/hooks"
 
-export interface IDarkWhite {
+export interface IDarkLight {
   children: React.ReactNode
 }
 
-const DarkLight: React.FC<IDarkWhite> = (props) => {
+const DarkLight: React.FC<IDarkLight> = (props) => {
   const { children } = props
-
   const DarkTheme = useAppSelector((state) => state.mainScreen.darkTheme)
 
-  return <div className={DarkTheme ? "dark" : "light"}>{children}</div>
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark-theme", DarkTheme)
+  }, [DarkTheme])
+
+  return <>{children}</>
 }
 
 export default DarkLight

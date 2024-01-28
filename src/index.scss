@@ -1,13 +1,14 @@
-:root {
-  --color-primary-darker:
+// :root {
+//   --spacing-medium: 16px;
+//   --spacing-large: 20px;
 
-  --spacing-medium: 16px;
-  --spacing-large: 20px;
+//   --border-radius: 5px;
+//   --box-shadow: 0 16px 24px 2px rgba(33, 37, 41, 0.02),
+//     0 6px 30px 5px rgba(33, 37, 41, 0.04), 0 8px 10px -5px rgba(33, 37, 41, 0.1);
+// }
 
-  --border-radius: 5px;
-  --box-shadow: 0 16px 24px 2px rgba(33, 37, 41, 0.02),
-    0 6px 30px 5px rgba(33, 37, 41, 0.04), 0 8px 10px -5px rgba(33, 37, 41, 0.1);
-}
+@import "./themes/light.scss";
+@import "./themes/dark.scss";
 
 *,
 *:after,
