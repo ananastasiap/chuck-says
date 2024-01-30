@@ -1,0 +1,14 @@
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 50em;
+  height: 50em;
+  background-color: #9f7070;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    width: 23em;
+    height: 30em;
+  }
+}

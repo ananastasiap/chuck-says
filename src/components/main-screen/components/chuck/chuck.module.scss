@@ -202,9 +202,16 @@
   box-shadow: -5.31em -15.62em #79311f;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1300px) {
   .container {
     font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    top: 59%;
+    font-size: 0.8em;
   }
 }
 
