@@ -44,13 +44,13 @@
 
 @media screen and (max-width: 576px) {
   .container {
-    top: 5em;
-    left: 8em;
+    top: 6em;
+    left: 6em;
     width: 15em;
     height: 7em;
 
     &::before {
-      left: 2em;
+      left: 8em;
     }
   }
 
