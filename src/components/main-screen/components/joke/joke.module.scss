@@ -1,7 +1,7 @@
 .container {
   position: absolute;
-  top: 9em;
-  left: 4em;
+  top: 1em;
+  left: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +16,8 @@
     content: "";
     top: 11em;
     left: 32em;
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
     background-color: #e0f0e5;
   }
@@ -28,4 +28,88 @@
   font-weight: normal;
   text-align: center;
   color: var(--joke-color);
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+  .container {
+    top: 1em;
+    left: -2em;
+    width: 26em;
+    height: 10em;
+
+    &::before {
+      left: 26em;
+      width: 2.3em;
+      height: 2.3em;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 991px) {
+  .container {
+    top: 5em;
+    left: 0em;
+    width: 22em;
+    height: 9em;
+
+    &::before {
+      left: 17em;
+      top: 10em;
+      width: 2.3em;
+      height: 2.3em;
+    }
+  }
+
+  .joke {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 800px) {
+  .container {
+    top: 5em;
+    left: 0em;
+    width: 16em;
+    height: 8em;
+
+    &::before {
+      left: 12em;
+      top: 9em;
+    }
+  }
+
+  .joke {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    top: 3em;
+    left: 7em;
+    width: 15em;
+    height: 7em;
+
+    &::before {
+      left: 8em;
+    }
+  }
+
+  .joke {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .container {
+    top: 0.5em;
+    left: 6em;
+
+    &::before {
+      left: -1em;
+      top: 8em;
+      width: 2em;
+      height: 2em;
+    }
+  }
 }
