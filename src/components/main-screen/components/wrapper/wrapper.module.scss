@@ -6,6 +6,13 @@
   background-color: #9f7070;
 }
 
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .wrapper {
+    width: 34em;
+    height: 35em;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .wrapper {
     width: 23em;
