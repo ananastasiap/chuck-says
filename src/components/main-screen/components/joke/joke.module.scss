@@ -30,7 +30,7 @@
   color: var(--joke-color);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 20em;
     height: 9em;
@@ -42,15 +42,15 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .container {
-    top: 5em;
-    left: 3em;
+    top: 8em;
+    left: 19em;
     width: 15em;
     height: 7em;
 
     &::before {
-      left: 8em;
+      left: 2em;
     }
   }
 
